@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <h1 id="title">Developer Community Feedback Form</h1>
+
+  <p id="description">
+    Thank you for taking the time to help us improve our developer community.
+  </p>
+
+  <form id="survey-form">
+
+    <!-- Name -->
+    <label id="name-label" for="name">Full Name</label><br>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your full name"
+      required
+    >
+    <br><br>
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email Address</label><br>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    >
+    <br><br>
+
+    <!-- Number -->
+    <label id="number-label" for="number">Age</label><br>
+    <input
+      type="number"
+      id="number"
+      name="age"
+      min="10"
+      max="100"
+      placeholder="Enter your age"
+    >
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="dropdown">Current Role</label><br>
+    <select id="dropdown" name="role">
+      <option value="student">Student</option>
+      <option value="developer">Developer</option>
+      <option value="teacher">Teacher</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <!-- Radio Buttons -->
+    <p>Would you recommend our community?</p>
+
+    <input type="radio" id="yes" name="recommend" value="yes">
+    <label for="yes">Yes</label>
+
+    <input type="radio" id="no" name="recommend" value="no">
+    <label for="no">No</label>
+
+    <input type="radio" id="maybe" name="recommend" value="maybe">
+    <label for="maybe">Maybe</label>
+
+    <br><br>
+
+    <!-- Checkboxes -->
+    <p>Which topics are you interested in?</p>
+
+    <input type="checkbox" id="html" value="HTML">
+    <label for="html">HTML</label>
+
+    <input type="checkbox" id="css" value="CSS">
+    <label for="css">CSS</label>
+
+    <input type="checkbox" id="javascript" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+
+    <input type="checkbox" id="python" value="Python">
+    <label for="python">Python</label>
+
+    <br><br>
+
+    <!-- Textarea -->
+    <label for="comments">Additional Comments</label><br>
+    <textarea
+      id="comments"
+      name="comments"
+      rows="5"
+      cols="40"
+      placeholder="Write your comments here..."
+    ></textarea>
+
+    <br><br>
+
+    <!-- Submit -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
