@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout Page</title>
+</head>
+
+<body>
+  <h1>Checkout</h1>
+  <section>
+    <h2>Your Cart</h2>
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Cube.jpj" width="150" height="120">
+    <p>$25.00</p>
+  </section>
+  <section>
+    <h2>Payment Information</h2>
+    <form>
+      <label for="card-name">
+        Card Holder Name
+        <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" id="card-name" name="card-name" required placeholder="Enter your Card name"
+        aria-describedby="card-name-help">
+
+      </br>
+      <label for="card-number">
+        Card Holder Name
+        <span aria-hidden="true">*</span>
+      </label>
+
+      <input type="text" id="card-number" name="card-number" required placeholder="Enter your Card Number"
+        aria-describedby="card-number-help">
+      <br />
+      <label for="expiry-date">Expiry Date
+        <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" name="expiry-date" id="expiry-date" required placeholder="DD/YY"
+        aria-describedby="card-number-help">
+      <br />
+
+      <label for="cvv">
+        CVV
+        <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" name="CVV" id="CVV" placeholder="CVV" required aria-describedby="card-number-help">
+      <p id="card-number-help">
+        Please enter your card number in the format 0000 0000 0000 0000.
+      </p>
+    </form>
+  </section>
+</body>
+
+</html>
